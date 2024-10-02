@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выручка за указанный период: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите начальную дату"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/item_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:id="@+id/textEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите конечную дату"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/item_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <Button
+        android:id="@+id/revenueСalculation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подсчитать выручку"
+        android:layout_marginTop="16dp" />
+
+
+    <ListView
+        android:id="@+id/list_view_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="16dp"
+        android:divider="@color/primary_background"/>
+</LinearLayout>

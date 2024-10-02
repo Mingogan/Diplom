@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SpringClient" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/toolbar_background</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/toolbar_background</item>
+        <item name="colorSecondaryVariant">@color/dark_gray</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Window background color -->
+        <item name="android:windowBackground">@color/primary_background</item>
+        <!-- Toolbar background color -->
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+    </style>
+
+    <style name="Theme.SpringClient" parent="Base.Theme.SpringClient" />
+
+    <!-- Custom Toolbar Style -->
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Custom styles for MaterialButton -->
+    <style name="CustomMaterialButtonFree" parent="Widget.Material3.Button">
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/toolbar_background</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="CustomMaterialButtonOccupied" parent="Widget.Material3.Button">
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/light_gray</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="CustomMaterialButtonDefault" parent="Widget.Material3.Button">
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/teal_700</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <!-- Стиль для кнопки добавления -->
+    <style name="AddButtonStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="DeleteButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_width">40dp</item> <!-- Уменьшение размера кнопки -->
+        <item name="android:layout_height">40dp</item> <!-- Уменьшение размера кнопки -->
+        <item name="android:backgroundTint">#8B0000</item> <!-- Темно-красный цвет -->
+        <item name="icon">@drawable/ic_button_delete</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="iconSize">24dp</item> <!-- Увеличение размера иконки -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <!-- Стиль для кнопки редактирования -->
+    <style name="EditButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_width">40dp</item> <!-- Уменьшение размера кнопки -->
+        <item name="android:layout_height">40dp</item> <!-- Уменьшение размера кнопки -->
+        <item name="android:backgroundTint">?attr/colorPrimary</item> <!-- Основной цвет -->
+        <item name="icon">@drawable/ic_button_edit</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="iconSize">24dp</item> <!-- Увеличение размера иконки -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+
+    <style name="SpinnerToolbarStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!-- Добавим стиль для выпадающего списка -->
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="MenuTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SpinnerPopupTheme" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="android:popupBackground">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+</resources>
